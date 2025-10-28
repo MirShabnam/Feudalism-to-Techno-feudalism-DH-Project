@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Feudalism vs Techno-feudalism — DH Project</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style>
+    body { font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif; margin: 2rem; line-height: 1.5; }
+    h1, h2 { margin-top: 1.2rem; }
+    .grid { display: grid; grid-template-columns: 1fr; gap: 1rem; }
+    @media (min-width: 900px) {{ .grid {{ grid-template-columns: 1fr 1fr; }} }}
+    .card {{ border: 1px solid #ddd; border-radius: 12px; padding: 1rem; }}
+    img {{ max-width: 100%; height: auto; border-radius: 8px; }}
+    table {{ border-collapse: collapse; width: 100%; }}
+    th, td {{ border: 1px solid #ddd; padding: 8px; text-align: left; }}
+    th {{ background: #f7f7f7; }}
+    .small {{ color:#555; font-size: .9rem; }}
+  </style>
+</head>
+<body>
+  <h1>Feudalism vs Techno-feudalism — Digital Humanities Comparison</h1>
+  <p class="small">This site accompanies the repo. See <code>reports/essay.md</code> for the full text.</p>
+
+  <div class="grid">
+    <div class="card">
+      <h2>Conceptual Intensity</h2>
+      <img src="visuals/intensity_grouped_bars.png" alt="Grouped bars">
+    </div>
+    <div class="card">
+      <h2>History Repeating?</h2>
+      <img src="visuals/enclosure_history_line.png" alt="Enclosure timeline">
+    </div>
+  </div>
+
+  <h2>At-a-Glance Table</h2>
+  <table>
+    <thead>
+      <tr><th>Aspect</th><th>Feudalism (Past)</th><th>Techno-feudalism (Present)</th></tr>
+    </thead>
+    <tbody>
+    </tbody>
+  </table>
+
+  <script>
+    // Inject CSV rows into the table (works on GitHub Pages if same-origin files are served)
+    fetch('data/comparison_table.csv')
+      .then(r => r.text())
+      .then(t => {
+        const rows = t.trim().split('\n').slice(1).map(l => l.split(','));
+        const tbody = document.querySelector('tbody');
+        rows.forEach(cols => { 
+          const tr = document.createElement('tr');
+          cols.forEach(c => { const td = document.createElement('td'); td.textContent = c; tr.appendChild(td); });
+          tbody.appendChild(tr);
+        });
+      })
+      .catch(() => {
+        const tbody = document.querySelector('tbody');
+        const tr = document.createElement('tr');
+        tr.innerHTML = '<td colspan="3">Open <code>data/comparison_table.csv</code> in the repo if this table fails to load.</td>';
+        tbody.appendChild(tr);
+      });
+  </script>
+
+  <h2>Canva Visual Set</h2>
+  <div class="grid">
+    <div class="card">
+      <h3>Conceptual Intensity (Canva)</h3>
+      <img src="visuals/feudal_vs_techno_intensity_canva.png" alt="Feudal vs Techno (Canva)">
+    </div>
+    <div class="card">
+      <h3>History Repeating (Canva)</h3>
+      <img src="visuals/history_repeating_canva.png" alt="History Repeating (Canva)">
+    </div>
+    <div class="card">
+      <h3>Critical Comparison (Canva)</h3>
+      <img src="visuals/critical_comparison_canva.png" alt="Critical Comparison (Canva)">
+    </div>
+  </div>
+
+</body>
+</html>

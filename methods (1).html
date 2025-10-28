@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Feudalism vs Techno-Feudalism — Digital Humanities</title>
+<style>
+  :root {
+    --bg: #f7f3ed; --ink: #2d2323; --accent:#b5916a; --muted:#553a2c;
+  }
+  * { box-sizing: border-box; }
+  body { font-family: "Inter", system-ui, -apple-system, serif; background: var(--bg); color: var(--ink); margin: 0; line-height: 1.7; }
+  header.hero {
+    background: linear-gradient(to bottom, rgba(0,0,0,.45), rgba(0,0,0,.1)), url('visuals/history_repeating_canva.png') center/cover fixed;
+    color: #fff; text-align: center; padding: 120px 20px; text-shadow: 0 2px 6px rgba(0,0,0,0.5);
+  }
+  h1 { font-size: 2.6rem; margin:.2em 0 .4em }
+  h2 { margin: 2rem 0 1rem; color: #402e1e; font-family: "Playfair Display", serif; }
+  p  { max-width: 900px; margin: .8rem auto; text-align: justify; }
+  main { padding: 2rem 1.2rem; }
+  nav {
+    display:flex; gap:.8rem; flex-wrap:wrap; justify-content:center; padding: .8rem 1rem; background:#fff6ee; border-bottom:1px solid #ead8c2;
+  }
+  nav a { color:#6b3e1d; text-decoration:none; font-weight:600; padding:.4rem .6rem; border-radius:6px; }
+  nav a:hover { background:#f3e5d8; }
+  .quote { font-style: italic; color: var(--muted); border-left: 4px solid #d2b48c; padding-left: 1rem; margin: 1.5rem auto; max-width: 800px; }
+  .grid { display:grid; grid-template-columns:1fr; gap:1rem; max-width:1100px; margin: 0 auto; }
+  @media (min-width: 900px) { .grid { grid-template-columns: 1fr 1fr; } }
+  .card { background:#fff; border:1px solid #ead8c2; border-radius:12px; padding:1rem; box-shadow:0 2px 8px rgba(0,0,0,.05); }
+  img { display:block; margin: .5rem auto; max-width: 100%; border-radius:8px; box-shadow:0 2px 8px rgba(0,0,0,.08); }
+  footer { background: var(--accent); color:#fff; padding: 1.5rem; text-align:center; margin-top: 2rem; }
+  .small { color:#6b5b4a; font-size:.95rem; }
+</style>
+</head>
+<body>
+<nav>
+  <a href="index.html">Home</a>
+  <a href="about.html">About</a>
+  <a href="methods.html">Methods</a>
+  <a href="gallery.html">Gallery</a>
+  <a href="references.html">References</a>
+</nav>
+
+<header class="hero">
+  <h1>Methods & Workflow</h1>
+  <p>Digital Humanities with data, TEI, and visual storytelling</p>
+</header>
+<main>
+  <section>
+    <h2>Data & Visualization</h2>
+    <p>Comparative datasets in <code>data/</code> quantify 14 dimensions. Reproducible Python scripts in <code>src/</code> generate charts. A Jupyter notebook in <code>notebooks/</code> documents analysis.</p>
+  </section>
+  <section class="grid">
+    <div class="card">
+      <h3>TEI Encoding</h3>
+      <p>We encode a medieval charter and a contemporary Terms of Service to expose continuity in coercive language.</p>
+      <ul>
+        <li><a href="tei/charter_1320.xml">charter_1320.xml</a></li>
+        <li><a href="tei/tos_2025.xml">tos_2025.xml</a></li>
+      </ul>
+    </div>
+    <div class="card">
+      <h3>Reproduce the Figures</h3>
+      <p>Run <code>python3 src/make_plots.py</code> to regenerate charts from CSV files.</p>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <p>© 2025 Eprene — TechnoFeudalism-DH-Project • Updated 2025-10-28</p>
+</footer>
+</body></html>

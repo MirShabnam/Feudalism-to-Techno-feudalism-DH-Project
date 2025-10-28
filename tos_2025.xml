@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Terms of Service Excerpt (c. 2025) — TEI Sample</title>
+      </titleStmt>
+      <publicationStmt>
+        <p>Unpublished teaching sample.</p>
+      </publicationStmt>
+      <sourceDesc>
+        <p>Constructed excerpt for DH project pedagogy.</p>
+      </sourceDesc>
+    </fileDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div type="termsOfService">
+        <p>By using the Service, you grant the Platform a worldwide, non-exclusive
+        license to process your data for personalization and monetization. The Platform
+        may suspend or terminate access at its sole discretion.</p>
+      </div>
+    </body>
+  </text>
+</TEI>

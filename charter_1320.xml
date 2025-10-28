@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Manor Charter Excerpt (c. 1320) — TEI Sample</title>
+      </titleStmt>
+      <publicationStmt>
+        <p>Unpublished teaching sample.</p>
+      </publicationStmt>
+      <sourceDesc>
+        <p>Constructed excerpt for DH project pedagogy.</p>
+      </sourceDesc>
+    </fileDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div type="charter">
+        <p>Let it be known that the tenants of Greenford shall render to the lord
+        each Michaelmas a rent of twelve bushels of barley and shall owe three days'
+        labor at harvest under pain of the lord's court.</p>
+      </div>
+    </body>
+  </text>
+</TEI>
