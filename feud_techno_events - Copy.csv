@@ -1,0 +1,9 @@
+year,era,label,type,intensity
+1200,feudalism,High medieval consolidation,structure,0.7
+1350,feudalism,Post‑plague labor renegotiations,shock,0.6
+1492,feudalism,Imperial‑colonial expansions begin,expansion,0.8
+2004,technofeudalism,Web 2.0 platformization,platform,0.6
+2010,technofeudalism,App store gatekeeping consolidates,platform,0.7
+2016,technofeudalism,Surveillance capitalism publicized,discourse,0.8
+2020,technofeudalism,Pandemic platform dependency peak,shock,0.9
+2024,technofeudalism,AI platform rent extraction debates,discourse,0.85

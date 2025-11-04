@@ -1,0 +1,14 @@
+year,type,label,region,intensity,decade
+1848,action,Revolutions of 1848,Europe,0.9,1840
+1867,publication,Capital Vol. I,Europe,0.8,1860
+1871,action,Paris Commune,Europe,1.0,1870
+1917,action,October Revolution,Russia,1.0,1910
+1921,publication,Lenin: NEP Debates,Russia,0.6,1920
+1936,publication,Gramsci: Prison Notebooks,Italy,0.7,1930
+1959,action,Cuban Revolution,Americas,0.8,1950
+1968,action,Global 1968 Uprisings,Global,0.7,1960
+1973,publication,Althusser: Ideology apparatuses,France,0.6,1970
+1989,publication,End of Soviet Era debates,Global,0.5,1980
+2008,publication,Crisis-era Marx revival,Global,0.6,2000
+2011,action,Occupy / Arab Spring milieu,Global,0.6,2010
+2020,publication,Platform capitalism / techno-feudalism,Global,0.7,2020

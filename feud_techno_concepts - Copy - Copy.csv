@@ -1,0 +1,11 @@
+concept,feudalism_score,technofeudalism_score,note
+lord_vassal,90,10,hierarchy relation
+fief/land_rent,85,20,extraction via land
+oath_fealty,80,15,personal obligation
+manor/serfdom,88,5,local control
+guild_control,70,15,access monopolies
+platform_dependency,10,92,platform lock‑in
+data_rent,5,90,extraction via data
+surveillance,10,88,visibility/control
+algorithmic_governance,0,86,rules by code
+terms_of_service,0,80,private law regime
